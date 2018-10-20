@@ -1,11 +1,12 @@
 {
-  "name": "ssr-test",
+  "name": "react-mobx-ssr-starter",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "start": "nodemon ./build/app",
+    "build:server-prod": "webpack -p --config webpack.config.server.js",
     "build:server": "webpack --watch --config webpack.config.server.js",
-    "build:client": "webpack --watch --config webpack.config.client.js"
+    "build:client": "webpack --watch --config webpack.config.client.js",
+    "build:client-prod": "webpack -p --config webpack.config.client.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

@@ -6,12 +6,10 @@ const isDev = nodeEnv === 'development';
 
 module.exports = {
   entry: {
-    app: './server.js',
+    app: path.resolve('server', 'server.js'),
   },
   output: {
     path: path.resolve('build'),
-    publicPath: 'http://localhost:3002/dist/',
-    globalObject: 'this',
   },
   target: 'node',
   externals: fs.readdirSync('node_modules')

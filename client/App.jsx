@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import styles from './styles.scss';
 
@@ -15,11 +15,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         Counter: {this.state.counter}
         <button onClick={this.onClick}>Increase counter</button>
         <div className={styles.text}>Hello from react</div>
-      </div>
+      </Fragment>
     );
   }
 }
