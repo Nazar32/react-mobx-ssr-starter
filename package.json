@@ -4,6 +4,10 @@
   "description": "",
   "author": "Nazar32",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nazar32/react-mobx-ssr-starter.git"
+  },
   "scripts": {
     "start": "nodemon ./build/app",
     "build:server-prod": "webpack -p --config webpack.config.server.js",
