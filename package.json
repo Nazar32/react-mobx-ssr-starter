@@ -1,0 +1,37 @@
+{
+  "name": "ssr-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./build/app",
+    "build:server": "webpack --watch --config webpack.config.server.js",
+    "build:client": "webpack --watch --config webpack.config.client.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.2.1",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "isomorphic-style-loader": "^4.0.0",
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.18.4",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
