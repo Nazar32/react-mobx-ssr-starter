@@ -1,8 +1,8 @@
 import express from 'express';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
-import App from '../../client/App';
-import ContextProvider from '../../client/ContextProvider';
+import App from '../../src/App';
+import ContextProvider from '../../src/ContextProvider';
 
 const router = express.Router();
 

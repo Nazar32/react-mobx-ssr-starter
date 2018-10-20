@@ -5,7 +5,7 @@ const isDev = nodeEnv === 'development';
 
 module.exports = {
   entry: {
-    client: './client/browser.js',
+    client: './src/browser.js',
   },
   output: {
     path: path.resolve('build'),
