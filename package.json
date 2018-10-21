@@ -16,10 +16,13 @@
     "build:client-prod": "webpack -p --config webpack.config.client.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
+    "mobx": "^5.5.1",
+    "mobx-react": "^5.3.4",
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11",
     "react": "^16.5.2",
@@ -28,9 +31,13 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.1.2",
     "autoprefixer": "^9.2.1",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
     "isomorphic-style-loader": "^4.0.0",

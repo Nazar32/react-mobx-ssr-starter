@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import App from './App';
 
 export default class ContextProvider extends React.Component {
   static childContextTypes = {
@@ -12,6 +11,8 @@ export default class ContextProvider extends React.Component {
   }
 
   render () {
-    return <App { ...this.props } />
+    return React.Children.map(this.props.children, child => (
+      React.cloneElement(child, this.props)
+    ));
   }
 }
