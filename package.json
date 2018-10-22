@@ -11,9 +11,9 @@
   "scripts": {
     "start": "nodemon ./build/app",
     "build:server-prod": "webpack -p --config webpack.config.server.js",
+    "build:client-prod": "webpack -p --config webpack.config.client.js",
     "build:server": "webpack --watch --config webpack.config.server.js",
-    "build:client": "webpack --watch --config webpack.config.client.js",
-    "build:client-prod": "webpack -p --config webpack.config.client.js"
+    "build:client": "webpack --watch --config webpack.config.client.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
