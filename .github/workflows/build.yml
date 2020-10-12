@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build
-      run: npm run build:server-prod && npm run build:client-prod
+      run: npm i && npm run build:server-prod && npm run build:client-prod
