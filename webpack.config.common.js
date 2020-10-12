@@ -1,3 +1,5 @@
+const path = require('path');
+
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isDev = nodeEnv === 'development';
 
@@ -10,14 +12,19 @@ const cssLoaders = [
     options: {
       modules: true,
       sourceMap: isDev,
-      minimize: !isDev,
     },
   },
   {
     loader: 'postcss-loader',
     options: {
-      plugins: () => [require('autoprefixer')]
-    }
+      postcssOptions: {
+        plugins: [
+          [
+            'autoprefixer',
+          ],
+        ],
+      },
+    },
   },
 ];
 

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import withStyles from 'isomorphic-style-loader/withStyles';
 import { inject, observer} from 'mobx-react';
 import AppStore from './stores/AppStore';
 import styles from './styles.scss';

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/server';
 import { Provider } from 'mobx-react';
 import AppStore from '../../src/stores/AppStore';
 import App from '../../src/App';
-import ContextProvider from '../../src/ContextProvider';
+import StyleContext from 'isomorphic-style-loader/StyleContext';
 
 const router = express.Router();
 
@@ -19,9 +19,9 @@ router.get('/', async (req, res) => {
 
   const body = ReactDOM.renderToString(
     <Provider appStore={appStore}>
-      <ContextProvider context={context}>
+      <StyleContext.Provider value={context}>
         <App/>
-      </ContextProvider>
+      </StyleContext.Provider>
     </Provider>);
 
   const html = `<!doctype html>
