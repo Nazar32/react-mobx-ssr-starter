@@ -1,14 +1,11 @@
-name: Docker Image CI
+name: Build
 
 on: [push]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
-    - name: Build the Docker image
-      run: cat ~/.netrc
+    - name: Build
+      run: npm run build:server-prod && npm run build:client-prod
